@@ -1,0 +1,726 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+    
+}
+
+h1, h2, h3, h4, h5{font-family: 'cinzel';}
+
+.titulo-body{
+    min-width: 350px;
+    font-size: 72px;
+    margin: 0 100px;
+    margin-bottom: 50px;
+    border-bottom: 3px solid #a49264;
+}
+
+.boton{
+    background-color: #a49264;
+    width: 150px;
+    height: 40px;
+    border-radius: 25px;
+    border: none;
+    box-shadow: 0px 5px 20px rgba(0, 0, 0, 0.433);
+    transition: 0.5;
+}
+
+.boton:hover{
+    background-color: #191617;
+    color: #a49264;
+}
+
+/*------------------header---------------*/
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 350px;
+    font-family: 'cinzel';
+    padding: 20px 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.925),
+    rgba(12, 12, 12, 0.826),
+    rgba(20, 20, 20, 0.708),
+    rgba(0, 0, 0, 0.433));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(5px);
+}
+header .cont-logo{
+    font-family: 'cinzel';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header .cont-logo h2{
+    color: white;
+    margin: 0px 10px;
+    font-size: 25px;
+    
+}
+
+header .navegacion a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+header .boton-login{
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    margin-left: 40px;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+/*------------------------------- efecto-header---------------*/
+header .boton-login:hover{
+    background-color: #a49264;
+    border-color: #a49264;
+    color: black;
+}
+
+.navegacion a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navegacion a:hover::after{
+    transform: scaleX(1);
+}
+
+/*--------------------baner------------------------*/
+
+.baner{
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    min-width: 350px;
+    margin-bottom: 30px;
+    justify-content:center;
+}
+
+.baner .cont-titulo-baner{
+    width: 100%;
+    align-self: flex-end;
+    padding-left: 50px;
+    margin-bottom: 50px;
+}
+
+.baner .cont-titulo-baner h1{
+    font-size: 88px;
+}
+.baner .cont-titulo-baner p{
+    font-size: 25px;
+}
+
+/*----------------------navegacion 2----------------------*/
+
+.navegacion-2{
+    margin-bottom: 100px;
+}
+.cont-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    min-width: 350px;
+    padding: 0 100px;
+    overflow: hidden;
+    
+}
+.navegacion-2 ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: normal 20px Cinzel, sans-serif;
+    
+}
+.navegacion-2 ul li{
+    margin-right: 15px;
+    border-right: 2px solid #a49264;
+    padding-right: 15px;
+}
+
+.navegacion-2 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.navegacion-2 a:hover{
+    color: #a49264;
+    font-weight: bold;
+}
+
+
+/*---------------------hoteles--------------------*/
+.grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    width: 100%;
+    min-height: 500px;
+    min-width: 350px;
+    padding: 0px 100px;
+    margin-bottom: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas con un ancho mínimo de 200px */
+    grid-auto-rows: auto; /* Altura automática para las filas */
+    grid-auto-flow: row; /* Los elementos se acomodan automáticamente en la siguiente fila */
+    grid-gap: 15px; /* Espacio entre los elementos */
+    
+}
+
+.grid .grid-img{
+
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 500px;  
+    border-radius: 15px;
+    position: relative;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.433);
+    overflow: hidden;
+    
+}
+
+.hoteles .cont-hot-texto{
+    background-color: rgba(0, 0, 0, 0.433);
+    backdrop-filter: blur(2px);
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    min-height: 100px;
+    color: white;
+    padding: 20px;
+    
+}
+
+
+
+
+/*-------------------habitaciones---------------------*/
+
+.cont-habitaciones{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: 100%;
+    min-width: 350px;
+    padding: 0 100px;
+    margin-bottom: 100px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas con un ancho mínimo de 200px */
+    grid-auto-rows: auto; /* Altura automática para las filas */
+    grid-auto-flow: row; /* Los elementos se acomodan automáticamente en la siguiente fila */
+    grid-gap: 20px; /* Espacio entre los elementos */
+}
+
+.habitaciones .hab-1, .hab-2, .hab-3{
+    min-height: 500px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.habitaciones .cont-img{
+    position: relative;
+    background-position: center center;
+    background-size: cover;
+    min-height: 300px;
+
+}
+.habitaciones .cont-texto{
+    text-align: center;
+    background-color: whitesmoke;
+    padding: 20px 30px;
+}
+
+.habitaciones p{
+    min-height: 50px;
+    text-align: justify;
+    padding: 0 10px;
+}
+.habitaciones h2{
+    border-bottom: 2px solid #a49264;
+    margin-bottom: 12px;
+}
+
+
+
+/*-------------------precios---------------------*/
+.precios{
+    min-width: 350px;
+    margin-bottom: 100px;
+}
+
+.precios .cont-precios{
+    width: 100%;
+    padding: 0 100px;
+    overflow: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+
+
+
+
+/*-------------------servicios---------------------*/
+
+.servicio{
+    background-color: #151515;
+    min-width: 350px;
+    padding: 30px 0px;
+}
+
+.servicio .titulo-body{
+    color: white;
+}
+
+.servicio .bloque{
+    display: grid;
+    gap: 20px;
+    min-height: 600px;
+    width: 100%;
+    padding: 30px 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Columnas con un ancho mínimo de 200px */
+    grid-auto-rows: auto; /* Altura automática para las filas */
+    grid-auto-flow: row; /* Los elementos se acomodan automáticamente en la siguiente fila */
+    grid-gap: 15px; /* Espacio entre los elementos */
+    
+    
+}
+.servicio .bloque-img-1{
+    background-position: center center;
+    background-size: cover; 
+    border-radius: 5px;
+    min-height: 400px;
+    position: relative;
+}
+
+
+.servicio .bloque-img{
+    border-radius: 5px;
+    background-position: center center;
+    background-size: cover;
+
+    min-height: 400px;
+    position: relative;
+    overflow: hidden;
+}
+
+.servicio .cont-texto-bloque{
+
+    width: 100%;
+    min-height: 100px;
+    position: absolute;
+    bottom: 0;
+    padding: 30px;
+    color: white;
+    
+}
+
+/*-------------------final---------------------*/
+
+.cont-final{
+    
+    width: 100%;
+    min-width: 350px;
+    min-height: 80vh;
+    display: flex;
+}
+
+.cont-final-img{
+    background-color: rgb(193, 116, 15);
+    width: 50%;
+    min-height: 100%;
+    
+    background-position: center;
+    background-size: cover;
+}
+
+.cont-final-texto{
+    background-color: whitesmoke;
+    min-height: 100%;
+    width: 50%;
+    padding: 30px  100px;
+    overflow: auto;
+}
+.cont-final-texto h2{
+    font-family: 'cinzel';
+    font-size: 54px;
+    font-weight: 400;
+    margin-bottom: 30px;
+}
+
+.cont-final-texto p{
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.cont-final-texto h2,
+.cont-final-texto p {
+    word-wrap: break-word;
+}
+
+
+
+
+/*----------------------footer----------------------*/
+
+footer{
+    width: 100%;
+    min-width: 350px;
+    background-color: #151515;
+    min-height: 50vh;
+}
+
+footer .cont-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 30px 100px;
+}
+
+footer .cont-logo{
+    display: flex;
+    align-items: center;
+}
+
+footer .cont-logo-redes{
+    display: flex;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+footer .cont-logo h2{
+    color: white;
+    margin: 0px 10px;
+    
+}
+
+footer .redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+}
+footer .redes ul{ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+footer .redes li{
+    cursor: pointer;
+    display: inline-block;
+    width: 35px;
+    font-size: 35px;
+    margin-left: 10px;
+    
+}
+
+footer .redes a{
+    text-decoration: none;
+    color: white;
+}
+
+
+footer .cont-links-direccion{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+footer .cont-direccion{
+    width: 40%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+footer .cont-links{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    padding-left: 30px;
+  
+}
+
+footer .cont-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+footer .cont-links ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 1024px){
+
+    .titulo-body{
+        
+        font-size: 52px;
+        margin: 0 50px;
+        margin-bottom: 30px;
+    }
+
+    header{
+        padding: 20px;
+    }
+    
+    header .cont-logo h2{
+        margin: 0px 10px;
+        font-size: 18px;   
+    }
+
+    header .navegacion a{
+        display: none;
+    }
+
+    /*----------------------baner--------------------*/
+    
+    .baner .cont-titulo-baner h1{
+        font-size: 56px;
+    }
+    .baner .cont-titulo-baner p{
+        font-size: 20px;
+    }
+
+    /*----------------------navegacion 2--------------------*/
+
+    .navegacion-2{
+        margin-bottom: 50px;
+    }
+    .navegacion-2 .cont-nav{
+        padding: 0 50px;
+    }
+
+    /*----------------------hoteles----------------------------*/
+
+    .grid{
+        padding: 0 50px;
+    }
+
+    /*----------------------habitaciones-----------------------*/
+
+    .habitaciones .cont-habitaciones{
+        padding: 0 50px;
+        grid-template-columns: auto;
+    }
+
+    /*----------------------servicios--------------------------*/
+    
+    .servicio .bloque{
+        padding: 0 50px;
+    }
+
+    /*----------------------final------------------------------*/
+
+    .cont-final{
+        width: 100%;
+        min-height: auto;
+        flex-direction: column;
+    }
+    
+    .cont-final-img{
+        width: 100%;
+        height: 400px;   
+    }
+    
+    .cont-final-texto{
+        height: 30%;
+        width: 100%;
+        padding: 30px 50px;
+    }
+    .cont-final-texto h2{
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+
+    /*----------------------footer--------------------*/
+    
+    footer .cont-footer{
+        padding: 20px 50px;
+    }
+
+    footer .cont-logo-redes{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer .cont-links-direccion{
+        flex-direction: column;
+    }
+    footer .cont-direccion{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    footer .cont-links{
+        width: 100%;
+        padding: 0;
+    }
+}
+    
+@media (max-width: 620px){
+
+    .titulo-body{
+        font-size: 42px;
+        margin: 0 ;
+        padding: 0 20px;
+        margin-bottom: 30px;
+    }
+
+    header .boton-login{
+        height: 30px;
+        width: 85px;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    /*----------------------baner--------------------*/
+
+    .baner .cont-titulo-baner{
+        padding-left: 0px;
+    }
+    
+    .baner .cont-titulo-baner h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    .baner .cont-titulo-baner p{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /*----------------------navegacion 2--------------------*/
+
+    .navegacion-2 .cont-nav{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navegacion-2 ul{
+        flex-direction: column;
+    }
+
+    .navegacion-2 ul li{
+        margin: 0;
+        margin-bottom: 10px;
+        border-right: none;
+        border-bottom: 2px solid #a49264;
+    }
+
+    /*--------------------------hoteles----------------------*/
+    
+    .grid{
+        padding: 0;
+    }
+
+    /*-------------------habitaciones----------------------*/
+
+    .habitaciones .cont-habitaciones{
+        padding: 0;
+        width: 100%;
+        grid-gap: 20px;
+    }
+
+    /*-------------------servicios---------------------*/
+
+    .servicio .bloque{
+        padding: 0;
+        grid-column: 1fr;
+    }
+
+    /*--------------------footer----------------------------*/
+
+    footer .cont-logo-redes{
+        flex-direction: column;
+    }
+
+    footer .cont-logo{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    footer .redes li{
+        margin: 0px 10px;
+    }
+
+    footer .cont-direccion{
+        text-align: center;
+        border-bottom: 2px solid white;
+    }
+
+    footer .cont-links ul{
+        margin: 0;
+    }
+
+    footer .cont-links{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .cont-res{
+        text-align: center;
+    }
+    
+
+}

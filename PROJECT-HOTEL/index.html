@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARRIOT</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400..900&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sedan:ital@0;1&display=swap" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" href="estilo_index.css">
+</head>
+<body>
+    
+    <header>
+        
+        <div class="cont-logo">
+            <a href="/index.html"><img class="logo" src="/images/LOGO-HOTEL-FINAL.png" alt="" width="50px"></a>
+            <a href="/index.html" style="text-decoration: none;"><h2>Warriot</h2></a>
+        </div>
+        
+        <nav class="navegacion">
+            <a href="/index.html">Home</a>
+            <a href="/somos.html">Quienes somos</a>
+            <a href="/contacto.html">Contacto</a>
+            <button class="boton-login" onclick="window.location.href='/login.html'">Login</button>
+        </nav>
+  
+    </header>
+
+<!-- ---------------------baner------------------------- -->
+
+    <div class="baner" style="background-image: url(/images/baner-hotel.jpg);">
+        <div class="cont-titulo-baner">
+            <p>Warriot</p>
+            <h1>Buenos Aires</h1>
+        </div>
+        
+    </div>
+
+<!-- ---------------------navegacion 2------------------------- -->
+
+    <section class="navegacion-2">
+        <nav class="cont-nav">
+            <ul>
+                <li><a href="#hoteles">Hoteles</a></li>
+                <li><a href="#habitaciones">Habitaciones</a></li>
+                <li><a href="#precios">Precios</a></li>
+                <li><a href="#servicio">Servicios</a></li>
+            </ul>
+        </nav>
+    </section>
+
+<!-- ---------------------hoteles------------------------- -->
+
+    <section id="hoteles" class="hoteles">
+        <h1 class="titulo-body">hoteles</h1>
+
+        <div class="grid">
+            <div class="grid-img" style="background-image: url(/images/grid-hotel-4.jpg);">
+                <div class="cont-hot-texto">
+                    <h2>Buenos Aires</h2>
+                    <P></P>
+                    <button class="boton"> Ver Mas</button>
+                </div>
+            </div>
+                
+            <div class="grid-img" style="background-image: url(/images/grid-hotel-5.jpg);">
+                <div class="cont-hot-texto">
+                    <h2>Madrid</h2>
+                    <P></P>
+                    <button class="boton"> Ver Mas</button>
+                </div>
+            </div>
+            <div class="grid-img" style="background-image: url(/images/grid-hotel2.jpg);">
+                <div class="cont-hot-texto">
+                    <h2>Roma</h2>
+                    <P></P>
+                    <button class="boton">Ver Mas</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+<!-- ---------------------habitaciones------------------------- -->
+
+    <section id="habitaciones" class="habitaciones">
+
+        <h1 class="titulo-body">Habitaciones</h1>
+
+        <div class="cont-habitaciones">
+            <div class="hab-1">
+                <div class="cont-img" style="background-image: url(/images/habitacio-3.jpg);"></div>
+                <div class="cont-texto">
+                    <h2>Habitación simple</h2>
+                    <p>Nuestra habitación simple es un acogedor refugio para el viajero solitario que 
+                        busca comodidad y funcionalidad. Con una cama individual de lujo, un baño privado 
+                        elegante y todas las comodidades modernas, esta habitación ofrece un espacio íntimo y 
+                        tranquilo para relajarse después de explorar las maravillas de Buenos Aires.
+                    </p>
+                    <button class="boton">Reservar</button>
+                </div>
+            </div>
+            <div class="hab-2">
+                <div class="cont-img" style="background-image: url(/images/habitacion-doble.jpg);"></div>
+                <div class="cont-texto">
+                    <h2>Habitación doble</h2>
+                    <p>
+                        Nuestra habitación doble es ideal para parejas o amigos que viajan juntos y desean 
+                        compartir una experiencia de alojamiento cómoda y elegante. Con dos camas individuales 
+                        o una cama queen-size, un baño privado amplio y bien equipado, y una decoración acogedora 
+                        y contemporánea, esta habitación ofrece el espacio perfecto para descansar y recargar energías.
+                    </p>
+                    <button class="boton">Reservar</button>
+                </div>
+            </div>
+            <div class="hab-3">
+                <div class="cont-img" style="background-image: url(/images/habitacion-suite.jpg);"></div>
+                <div class="cont-texto">
+                    <h2>Suite</h2>
+                    <p>
+                        Nuestra suite es el epítome del lujo y la sofisticación. Con un amplio dormitorio 
+                        con una lujosa cama king-size, una elegante sala de estar y un baño de mármol con 
+                        bañera de hidromasaje, esta suite ofrece un espacio generoso y refinado para los 
+                        huéspedes más exigentes. Disfrute de las vistas panorámicas de la ciudad desde su 
+                        ventana y sumérjase en un oasis de confort y estilo en el corazón de Buenos Aires.
+                    </p>
+                    <button class="boton">Reservar</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- ---------------------precios------------------------- -->
+
+    <section id="precios" class="precios">
+
+        <h1 class="titulo-body">Precios</h1>
+        <div class="cont-precios">
+            <h2>Tarifas y Disponibilidad de Habitaciones</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Habitación</th>
+                        <th>Capacidad</th>
+                        <th>Precio por Noche</th>
+                        <th>Disponibilidad</th>
+                        <th>Servicios Incluidos</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Habitación Individual</td>
+                        <td>1 persona</td>
+                        <td>$100</td>
+                        <td>Disponible</td>
+                        <td>Wi-Fi gratuito, Desayuno incluido</td>
+                    </tr>
+                    <tr>
+                        <td>Habitación Doble</td>
+                        <td>2 personas</td>
+                        <td>$150</td>
+                        <td>Disponible</td>
+                        <td>Wi-Fi gratuito, Desayuno incluido, Piscina</td>
+                    </tr>
+                    <tr>
+                        <td>Suite</td>
+                        <td>2 personas</td>
+                        <td>$200</td>
+                        <td>No Disponible</td>
+                        <td>Wi-Fi gratuito, Desayuno incluido, Spa, Gimnasio</td>
+                    </tr>
+                    <tr>
+                        <td>Familiar</td>
+                        <td>4 personas</td>
+                        <td>$250</td>
+                        <td>Disponible</td>
+                        <td>Wi-Fi gratuito, Desayuno incluido, Parque infantil</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        
+    </section>
+
+<!-- ---------------------servicios--------------------------->
+
+    <section id="servicio" class="servicio">
+        <h1 class="titulo-body">Servicios</h1>
+        
+        <div class="bloque">
+            <div class="bloque-img" style="background-image: url(/images/gym.jpg);">
+                <div class="cont-texto-bloque">
+                    <h2>gimnacio</h2>
+                    <P></P>
+                    <button class="boton"> Ver Mas</button>
+                </div>
+            </div>
+            <div class="bloque-img" style="background-image: url(/images/habitacion-2.jpg);">
+                <div class="cont-texto-bloque">
+                    <h2>Madrid</h2>
+                    <P></P>
+                    <button class="boton"> Ver Mas</button>
+                </div>
+            </div>
+            <div class="bloque-img" style="background-image: url(/images/servicios-bar.jpg);">
+                <div class="cont-texto-bloque">
+                    <h2>Bar</h2>
+                    <P></P>
+                    <button class="boton"> Ver Mas</button>
+                </div>
+            </div>
+            <div class="bloque-img" style="background-image: url(/images/servicios-vino.jpg);">
+                <div class="cont-texto-bloque">
+                    <h2>Comida</h2>
+                    <P></P>
+                    <button class="boton"> Ver Mas</button>
+                </div>
+            </div>
+            <div class="bloque-img" style="background-image: url(/images/servicios-picina.jpg);">
+                <div class="cont-texto-bloque">
+                    <h2>picina</h2>
+                    <P></P>
+                    <button class="boton"> Ver Mas</button>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+
+<!-- ---------------------final--------------------------->
+
+    <section id="final" class="final">
+        <div class="cont-final">
+            <div class="cont-final-img" style="background-image: url(/images/Buenos-Aires_Arquitectura.jpg);"></div>
+            <div class="cont-final-texto">
+                <h2>Bienvenido a la ciudad de la furia</h2>
+                <p>Recorrer las calles de la ciudad de Buenos Aires en Argentina,
+                    muchas veces a través de sus adoquines, casas patrimoniales 
+                    y cafeterías, sin duda te transporta y te hace pensar que estás en cualquier rincón de la ciudad europea.
+                </p>
+                <button class="boton">Mas</button>
+           
+            </div>
+        </div>
+    </section>
+        
+<!-- ---------------------footer--------------------------->
+
+    <footer id="footer" class="footer">
+        <div class="cont-footer">
+            <div class="cont-logo-redes">
+                <div class="cont-logo">
+                    <img class="logo" src="/images/LOGO-HOTEL-FINAL.png" alt="" width="100px">
+                    <h2>Warriot</h2>
+                </div>
+                <div class="redes">
+                    <ul>
+                        <li><a href="https://www.facebook.com"><i class='bx bxl-facebook-circle'></i></a></li>
+                        <li><a href="https://www.instagram.com"><i class='bx bxl-instagram-alt'></i></a></li>
+                        <li><i class='bx bxl-whatsapp' ></i></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="cont-links-direccion">
+                <div class="cont-direccion">
+                    <p>Avda. Santa Fe 796, C1059ABO, Buenos Aires - Argentina</p>
+                    <p>+56 9 55555555</p>
+                </div>
+                <div class="cont-links">
+                    <div class="cont-res">
+                        <h5>Reservas</h5>
+                        <ul>
+                            <li><a href="#">Modificar / Cancelar</a></li>
+                            <li><a href="#">Reservar</a></li>
+                            <li><a href="#">nose</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="cont-res">
+                        <h5>Ayuda</h5>
+                        <ul>
+                            <li><a href="#">Modificar</a></li>
+                            <li><a href="#">nose</a></li>
+                            <li><a href="#">nose</a></li>
+                        </ul>
+                    </div>
+                    <div class="cont-res">
+                        <h5>Sobre Nosotros</h5>
+                        <ul>
+                            <li><a href="#">Modificar</a></li>
+                            <li><a href="#">nose</a></li>
+                            <li><a href="#">nose</a></li>
+                        </ul>
+                    </div>
+                </div>
+                
+            </div>
+            
+        </div>
+        <p>Derechos de autor &copy; 2024 - Mi Sitio Web</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,574 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    
+}
+
+h1, h2, h3, h4, h5{font-family: 'cinzel';}
+
+.titulo-body{
+    margin-bottom: 30px;
+    font-size: 72px;
+    margin-left: 100px;
+}
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    min-width: 350px;
+    font-family: 'cinzel';
+    padding: 20px 100px;
+    background: linear-gradient(rgba(0, 0, 0, 0.925),
+    rgba(12, 12, 12, 0.826),
+    rgba(20, 20, 20, 0.708),
+    rgba(0, 0, 0, 0.433));
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+    backdrop-filter: blur(5px);
+}
+header .cont-logo{
+    font-family: 'cinzel';
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+header .cont-logo h2{
+    color: white;
+    margin: 0px 10px;
+    font-size: 25px;
+    
+}
+
+header .navegacion a{
+    position: relative;
+    font-size: 1.1em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 40px;
+
+}
+header .boton-login{
+    width: 130px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid white;
+    margin-left: 40px;
+    outline: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 1.1em;
+    color: white;
+    font-weight: 500;
+    transition: 0.5s;
+}
+
+/*------------------------------- efecto-header---------------*/
+header .boton-login:hover{
+    background-color: #a49264;
+    border-color: #a49264;
+    color: black;
+}
+
+.navegacion a::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background: white;
+    border-radius: 5px;
+    left: 0;
+    bottom: -6px;
+    transform: scaleX(0);
+    transition: transform .5s;
+}
+
+.navegacion a:hover::after{
+    transform: scaleX(1);
+}
+
+/*--------------------body------------------------*/
+
+.baner{
+    display: flex;
+    background-size: cover;
+    background-position: center center;
+    color: white;
+    background-repeat: no-repeat;
+    height: 90vh;
+    width: 100%;
+    min-width: 350px;
+    justify-content: center;
+}
+
+.baner .cont-titulo-baner{
+    width: 100%;
+    align-self: flex-end;
+}
+
+.baner .cont-titulo-baner h1{
+    font-size: 88px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+}
+.baner .cont-titulo-baner p{
+    font-size: 25px;
+}
+
+/*----------------------navegacion 2----------------------*/
+
+.navegacion-2{
+    margin-bottom: 100px;
+}
+.cont-nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    min-height: 60px;
+    min-width: 350px;
+    padding: 0 100px;
+    overflow: hidden;
+    
+}
+.navegacion-2 ul{
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font: normal 20px Cinzel, sans-serif;
+    
+}
+.navegacion-2 ul li{
+    margin-right: 15px;
+    border-right: 2px solid #a49264;
+    padding-right: 15px;
+}
+
+.navegacion-2 a{
+    text-decoration: none;
+    color: black;
+    transition: 0.5s;
+}
+
+.navegacion-2 a:hover{
+    color: #a49264;
+    font-weight: bold;
+}
+
+/*----------------------valores----------------------*/
+
+.valores{
+    margin-bottom: 50px;
+}
+
+.valores .cont-valores{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    min-width: 350px;
+    padding: 0px 100px;
+     
+}
+.valores h2{
+    border-bottom: 3px solid #a49264;
+    margin-bottom: 20px;
+}
+
+.valores .cont-g{
+    
+    flex: 1;
+    text-align: center;
+    padding: 20px;
+}
+
+.valores .cont-g p{
+    text-align: justify;
+}
+
+/*----------------------historia----------------------*/
+.historia{
+    width: 100%;
+    margin-bottom: 100px;
+}
+
+.cont-historia{
+    display: flex;
+    min-width: 350px;
+    min-height: 70vh;
+    margin: 0px 100px;
+    margin-bottom: 30px;
+}
+
+.cont-historia .cont-img{
+    flex: 1.2;
+    min-height: 40vh;
+    background-position: center;
+    background-size: cover;
+
+}
+.cont-historia .cont-texto{
+    flex: 1;
+    padding: 30px 50px;
+    text-align: justify;
+}
+.cont-historia h2{
+    margin-bottom: 20px;
+    font-size: 52px;
+    text-align: left;
+}
+
+/*----------------------vision----------------------*/
+
+#vision{
+    width: 100%;
+}
+
+.cont-vision{
+    display: flex;
+    background-color: rgb(10, 10, 10);
+    
+    min-width: 350px;
+    color: white;
+    min-height: 70vh;
+    margin: 0px 100px;
+}
+
+.cont-vision .cont-img{
+    flex: 1.2;
+    min-height: 40vh;
+    background-position: center;
+    background-size: cover;
+
+}
+.cont-vision .cont-texto{
+    flex: 1;
+    padding: 30px 50px;
+    text-align: justify;
+}
+.cont-vision h2{
+    margin-bottom: 20px;
+    font-size: 52px;
+    text-align: left;
+}
+
+/*----------------------footer----------------------*/
+
+footer{
+    width: 100%;
+    min-width: 350px;
+    background-color: #151515;
+    min-height: 50vh;
+}
+
+footer .cont-footer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    color: white;
+    padding: 30px 100px;
+}
+
+footer .cont-logo{
+    display: flex;
+    align-items: center;
+}
+
+footer .cont-logo-redes{
+    display: flex;
+    border-bottom: 2px solid white;
+    margin-bottom: 30px;
+    padding-bottom: 30px;
+    justify-content: space-between;
+}
+
+footer .cont-logo h2{
+    color: white;
+    margin: 0px 10px;
+    
+}
+
+footer .redes{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+  
+}
+footer .redes ul{ 
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    
+}
+footer .redes li{
+    cursor: pointer;
+    display: inline-block;
+    width: 35px;
+    font-size: 35px;
+    margin-left: 10px;
+    
+}
+
+footer .redes a{
+    text-decoration: none;
+    color: white;
+}
+
+
+footer .cont-links-direccion{
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+
+footer .cont-direccion{
+    width: 40%;
+    height: 100%;
+    padding-right: 30px;
+}
+
+footer .cont-links{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(3, 1fr);
+    width: 60%;
+    padding-left: 30px;
+  
+}
+
+footer .cont-links ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    
+}
+footer .cont-links ul a{
+    text-decoration: none;
+    color: white;
+}
+
+
+@media (max-width: 1024px){
+
+    .titulo-body{
+        margin-bottom: 30px;
+        font-size: 52px;
+        margin-left: 50px;
+    }
+
+    header{
+        padding: 20px;
+    }
+    
+    header .cont-logo h2{
+        margin: 0px 10px;
+        font-size: 18px;
+        
+    }
+
+    header .navegacion a{
+        display: none;
+    }
+
+    /*----------------------baner--------------------*/
+
+    .baner .cont-titulo-baner h1{
+        font-size: 62px;
+        margin-left: 30px;
+        margin-bottom: 50px;
+    }
+
+    /*----------------------navegacion 2--------------------*/
+    .navegacion-2{
+        margin-bottom: 50px;
+    }
+
+    .navegacion-2 ul{
+        padding: 0 50px;
+    }
+
+
+    /*----------------------valores--------------------*/
+
+
+    .valores .cont-valores{
+        padding: 0px 50px;
+    }
+
+    /*----------------------historia vision--------------------*/
+
+    .historia .cont-historia{
+        flex-direction: column;
+        margin: 0px 50px;
+    }
+
+    .historia h2{
+        text-align: center;
+    }
+
+    .vision .cont-vision{
+        flex-direction: column;
+        margin: 0px 50px;
+    }
+
+    .vision h2{
+        text-align: center;
+        font-size: 42px;
+    }
+    .historia h2{
+        text-align: center;
+        font-size: 42px;
+    }
+
+    /*----------------------footer--------------------*/
+    
+    footer .cont-footer{
+        padding: 20px 50px;
+    }
+
+    footer .cont-logo-redes{
+        margin-bottom: 20px;
+        padding-bottom: 20px;
+    }
+
+    footer .cont-links-direccion{
+        flex-direction: column;
+    }
+    footer .cont-direccion{
+        width: 100%;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    
+    footer .cont-links{
+        width: 100%;
+        padding: 0;
+    }
+}
+        
+@media (max-width: 620px){
+
+    .titulo-body{
+        margin-bottom: 30px;
+        font-size: 32px;
+        margin-left: 50px;
+    }
+
+
+    header .boton-login{
+        height: 30px;
+        width: 85px;
+        font-size: 15px;
+        margin: 0;
+    }
+
+    /*----------------------baner--------------------*/
+
+    .baner .cont-titulo-baner{
+        padding-left: 0px;
+    }
+    
+    .baner .cont-titulo-baner h1{
+        font-size: 36px;
+        text-align: center;
+    }
+    .baner .cont-titulo-baner p{
+        font-size: 10px;
+        text-align: center;
+    }
+
+    /*----------------------navegacion 2--------------------*/
+
+
+    .navegacion-2 .cont-nav{
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navegacion-2 ul{
+        flex-direction: column;
+    }
+
+    .navegacion-2 ul li{
+        margin: 0;
+        margin-bottom: 10px;
+        border-right: none;
+        border-bottom: 2px solid #a49264;
+    }
+
+    /*----------------------valores--------------------*/
+    
+    .valores .cont-valores{
+        flex-direction: column;
+        padding: 0px 50px;
+    }
+
+    .valores .cont-g{
+        padding: 20px 0px;
+    }
+    /*----------------------historia vision--------------------*/
+
+    .historia .cont-historia{
+        width: 100%;
+        margin: 0;
+    }
+
+    .vision .cont-vision{
+        flex-direction: column-reverse;
+        width: 100%;
+        margin: 0;
+    }
+    
+    .vision h2{
+        font-size: 22px;
+    }
+
+    .historia h2{
+        font-size: 22px;
+    }
+
+    /*--------------------footer----------------------------*/
+
+    footer .cont-logo-redes{
+        flex-direction: column;
+    }
+
+    footer .cont-logo{
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+
+    footer .redes li{
+        margin: 0px 10px;
+    }
+
+    footer .cont-direccion{
+        text-align: center;
+        border-bottom: 2px solid white;
+    }
+
+    footer .cont-links ul{
+        margin: 0;
+    }
+
+    footer .cont-links{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    footer .cont-res{
+        text-align: center;
+    }
+    
+
+}
